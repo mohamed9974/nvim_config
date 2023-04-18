@@ -16,6 +16,7 @@ return {
     -- this will be the github config for the plugins
     "zbirenbaum/copilot.lua",
     cmd = "Copilot",
+    lazy = true,
     event = "InsertEnter",
     config = function()
       require('copilot').setup({
@@ -64,6 +65,11 @@ return {
     end,
   },
   {
-    "Arkko002/vim-cyberpunk",
+    "thedenisnikulin/vim-cyberpunk",
+    init = function()
+      vim.cmd("colorscheme cyberpunk")
+      vim.cmd("set termguicolors")
+      vim.g.airline_theme = 'cyberpunk'
+    end,
   },
 }
