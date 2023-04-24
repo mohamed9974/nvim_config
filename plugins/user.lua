@@ -64,12 +64,13 @@ return {
       })
     end,
   },
-  {
-    "thedenisnikulin/vim-cyberpunk",
-    init = function()
-      vim.cmd("colorscheme cyberpunk")
-      vim.cmd("set termguicolors")
-      vim.g.airline_theme = 'cyberpunk'
-    end,
-  },
+  -- {
+  --   "thedenisnikulin/vim-cyberpunk",
+  --   init = function()
+  --     vim.cmd("colorscheme cyberpunk")
+  --     vim.cmd("set termguicolors")
+  --     vim.g.airline_theme = 'cyberpunk'
+  --   end,
+  -- },
+  { "ayaz-amin/cyberpunk.nvim", init = function() vim.cmd("colorscheme cyberpunk") end },
 }
