@@ -17,7 +17,7 @@ return {
       --   ["remote3"] = "github_user", -- GitHub user assume AstroNvim fork
     },
   },
-
+  -- this is bs 
   -- Set colorscheme to use
   colorscheme = "oxocarbon",
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
