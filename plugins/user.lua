@@ -49,7 +49,7 @@ return {
           },
         },
         filetypes = {
-          yaml = false,
+          yaml = true,
           markdown = false,
           help = false,
           gitcommit = false,
@@ -72,5 +72,8 @@ return {
   --     vim.g.airline_theme = 'cyberpunk'
   --   end,
   -- },
-  { "ayaz-amin/cyberpunk.nvim", init = function() vim.cmd("colorscheme cyberpunk") end },
+  -- { "ayaz-amin/cyberpunk.nvim", init = function() vim.cmd("colorscheme cyberpunk") end },
+  {
+    "nyoom-engineering/oxocarbon.nvim"
+  }
 }

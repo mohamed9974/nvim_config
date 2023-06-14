@@ -24,6 +24,11 @@ return {
     ["<leader>co"] = { "<cmd>Copilot enable<cr>" },
     ["<leader>cop"] = { "<cmd>Copilot panel<cr>" },
     ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change description but the same command
+    -- CTRL and arrow will act the buffer navigator 
+    ["<C-Left>"] = { function() require("smart-splits").move_cursor_left() end, desc = "Move to left split" }
+    ["<C-Right>"] = { function() require("smart-splits").move_cursor_light() end, desc = "Move to left split" }
+    ["<C-Up>"] = { function() require("smart-splits").move_cursor_up() end, desc = "Move to left split" }
+    ["<C-Down>"] = { function() require("smart-splits").move_cursor_down() end, desc = "Move to left split" }
   },
   t = {
     -- setting a mapping to false will disable it
