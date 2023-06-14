@@ -17,6 +17,7 @@ return {
       --   ["remote3"] = "github_user", -- GitHub user assume AstroNvim fork
     },
   },
+
   -- Set colorscheme to use
   colorscheme = "oxocarbon",
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
@@ -59,7 +60,10 @@ return {
   },
   -- Configure require("lazy").setup() options
   lazy = {
+    -- enable lazy loading
     defaults = { lazy = true },
+    -- set smart split plugin to not lazy load
+    ["smart-splits"] = { lazy = false },
     performance = {
       rtp = {
         -- customize default disabled vim plugins

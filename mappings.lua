@@ -25,10 +25,17 @@ return {
     ["<leader>cop"] = { "<cmd>Copilot panel<cr>" },
     ["<C-s>"] = { ":w!<cr>", desc = "Save File" }, -- change description but the same command
     -- CTRL and arrow will act the buffer navigator 
-    ["<C-Left>"] = { function() require("smart-splits").move_cursor_left() end, desc = "Move to left split" }
-    ["<C-Right>"] = { function() require("smart-splits").move_cursor_light() end, desc = "Move to left split" }
-    ["<C-Up>"] = { function() require("smart-splits").move_cursor_up() end, desc = "Move to left split" }
-    ["<C-Down>"] = { function() require("smart-splits").move_cursor_down() end, desc = "Move to left split" }
+    ["<C-Left>"] = { function() require("smart-splits").move_cursor_left() end, desc = "Move to left split" },
+    ["<C-Right>"] = { function() require("smart-splits").move_cursor_right() end, desc = "Move to Right split" },
+    ["<C-Up>"] = { function() require("smart-splits").move_cursor_up() end, desc = "Move to Up split" },
+    ["<C-Down>"] = { function() require("smart-splits").move_cursor_down() end, desc = "Move to Down split" },
+
+    ["<S-Up>"] = { function() require("smart-splits").resize_up() end, desc = "Resize split up" },
+    ["<S-Down>"] = { function() require("smart-splits").resize_down() end, desc = "Resize split down" },
+    ["<S-Left>"] = { function() require("smart-splits").resize_left() end, desc = "Resize split left" },
+    ["<S-Right>"] = { function() require("smart-splits").resize_right() end, desc = "Resize split right" },
+
+
   },
   t = {
     -- setting a mapping to false will disable it
