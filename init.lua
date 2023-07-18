@@ -1,4 +1,15 @@
 return {
+  plugins = {
+    ["neo-tree"] = {
+      filesystem ={
+        filtered_items = {
+          visible = true,
+          hide_dotfiles = false,
+          hide_gitignore = true,
+        }
+      }
+    }
+  },
   -- Configure AstroNvim updates
   updater = {
     remote = "origin",     -- remote to use
