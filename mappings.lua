@@ -35,6 +35,10 @@ return {
     ["<S-Left>"] = { function() require("smart-splits").resize_left() end, desc = "Resize split left" },
     ["<S-Right>"] = { function() require("smart-splits").resize_right() end, desc = "Resize split right" },
 
+    ["<S-k>"] = { function() require("smart-splits").resize_up() end, desc = "Resize split up" },
+    ["<S-j>"] = { function() require("smart-splits").resize_down() end, desc = "Resize split down" },
+    ["<S-h>"] = { function() require("smart-splits").resize_left() end, desc = "Resize split left" },
+    ["<S-l>"] = { function() require("smart-splits").resize_right() end, desc = "Resize split right" },
 
   },
   t = {
