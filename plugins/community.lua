@@ -11,7 +11,7 @@ return {
   -- { import = "astrocommunity.pack.typescript" },
   -- { import = "astrocommunity.pack.python" },
   -- { import = "astrocommunity.pack.php" },
-  { import = "astrocommunity.utility.transparent-nvim" },
+  { import = "astrocommunity.color.transparent-nvim" },
   {
     "folke/edgy.nvim",
     event = "VeryLazy",
