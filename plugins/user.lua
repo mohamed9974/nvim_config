@@ -75,5 +75,11 @@ return {
   -- { "ayaz-amin/cyberpunk.nvim", init = function() vim.cmd("colorscheme cyberpunk") end },
   {
     "nyoom-engineering/oxocarbon.nvim",
-  }
+  },
+  {
+    "ldelossa/nvim-dap-projects",
+  },
+  {
+    "theHamsta/nvim-dap-virtual-text",
+  },
 }
